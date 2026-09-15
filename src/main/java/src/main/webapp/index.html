@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analyzer & Job Matcher</title>
+</head>
+
+<body>
+
+    <h1>Resume Analyzer & Job Matcher</h1>
+
+    <form action="analyze" method="post" enctype="multipart/form-data">
+
+        <label>Select Resume (PDF):</label>
+        <br><br>
+
+        <input type="file" name="resume" accept=".pdf" required>
+
+        <br><br><br>
+
+        <label>Enter Job Description:</label>
+        <br><br>
+
+        <textarea name="jobDescription"
+                  rows="10"
+                  cols="60"
+                  placeholder="Enter the job description here..."
+                  required></textarea>
+
+        <br><br>
+
+        <button type="submit">Analyze Resume</button>
+
+    </form>
+
+</body>
+</html>
